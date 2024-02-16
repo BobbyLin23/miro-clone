@@ -9,8 +9,8 @@
 
 ## Todo
 
-- [ ] Project Setup
-- [ ] Convex & Clerk
+- [x] Project Setup
+- [x] Convex & Clerk
 - [ ] Dashboard Layout
 - [ ] Sidebar
 - [ ] Org Sidebar
