@@ -1,10 +1,29 @@
-import { UserButton } from '@clerk/nextjs'
+'use client'
 
-export default function DashboardRootPage() {
+import { useOrganization } from '@clerk/nextjs'
+
+import { EmptyOrg } from './_components/empty-org'
+import { BoardList } from './_components/board-list'
+
+interface DashboardPageProps {
+  searchParams: {
+    search?: string
+    favorites?: string
+  }
+}
+
+export default function DashboardRootPage({
+  searchParams,
+}: DashboardPageProps) {
+  const { organization } = useOrganization()
+
   return (
-    <div className="flex flex-col gap-y-4">
-      <div>This is a screen for authenticated users only.</div>
-      <UserButton />
+    <div className="h-[calc(100%-80px)] flex-1 p-6">
+      {!organization ? (
+        <EmptyOrg />
+      ) : (
+        <BoardList orgId={organization.id} query={searchParams} />
+      )}
     </div>
   )
 }

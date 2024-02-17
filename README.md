@@ -11,6 +11,11 @@
 
 - [x] Project Setup
 - [x] Convex & Clerk
-- [ ] Dashboard Layout
-- [ ] Sidebar
-- [ ] Org Sidebar
+- [x] Dashboard Layout
+- [x] Sidebar
+- [x] Org Sidebar
+- [x] Navbar
+- [x] Empty State
+- [ ] Create Mutation
+- [ ] Board List
+- [ ] Card Actions
