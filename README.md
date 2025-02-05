@@ -1,10 +1,15 @@
 # Miro Clone
 
-- Project Setup
-- Auth & DB Setup
-- Dashboard Layout
-- Sidebar
-- Organization Sidebar
+- [x] Project Setup
+- [x] Auth & DB Setup
+- [x] Dashboard Layout
+- [x] Sidebar
+- [] Organization Sidebar
+- [] Navbar
+- [] Empty States
+- [] Mutations
+- [] Board Lists
+- [] Card Actions
 
 ## Technologies
 
